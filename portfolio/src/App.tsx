@@ -223,12 +223,14 @@ export default function App() {
               </svg>
             </a>
 
-            <a
-              className="glass rounded-xl px-4 py-2 text-sm font-semibold hover:ring-1 hover:ring-cyan-400/40 transition"
-              href="#"
-            >
-              CV
-            </a>
+           <a
+            className="glass rounded-xl px-4 py-2 text-sm font-semibold hover:ring-1 hover:ring-cyan-400/40 transition"
+            href="/cv-lucas-ortiz.pdf"
+            target="_blank"
+            rel="noreferrer"
+          >
+            CV
+          </a>
           </div>
         </GlassCard>
       </section>
