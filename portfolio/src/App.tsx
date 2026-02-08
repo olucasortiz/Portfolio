@@ -42,7 +42,7 @@ export default function App() {
               </a>
 
               <a
-                href="https://github.com/"
+                href="https://github.com/olucasortiz"
                 target="_blank"
                 rel="noreferrer"
                 className="glass rounded-xl px-4 py-2 text-sm font-semibold hover:ring-1 hover:ring-cyan-400/40 transition"

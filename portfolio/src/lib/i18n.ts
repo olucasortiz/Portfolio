@@ -6,7 +6,7 @@ export const copy = {
     hero: {
       title: "Backend-focused, com UI clara e performance.",
       subtitle:
-        "Portfólio profissional para apresentar projetos reais: consistência, validação, transações e arquitetura limpa.",
+        "Projetos reais de backend, com foco em consistência e regras de negócio.",
       ctaPrimary: "Ver projetos",
       ctaSecondary: "GitHub",
     },
@@ -17,7 +17,7 @@ export const copy = {
     hero: {
       title: "Backend-focused, with clean UI and performance.",
       subtitle:
-        "Professional portfolio to showcase real projects: consistency, validation, transactions, and clean architecture.",
+        "Real backend projects focused on business rules and data consistency",
       ctaPrimary: "View projects",
       ctaSecondary: "GitHub",
     },
