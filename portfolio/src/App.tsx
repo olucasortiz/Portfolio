@@ -67,8 +67,8 @@ export default function App() {
 
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
                   {lang === "pt"
-                    ? "API REST para agendamento de recursos com validação de conflitos, transações e histórico (soft delete)."
-                    : "REST API for resource booking with conflict validation, transactions, and history (soft delete)."}
+                    ? "API REST para agendamento de recursos com validação de conflitos, transações e histórico."
+                    : "REST API for resource booking with conflict validation, transactions, and history."}
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-2">

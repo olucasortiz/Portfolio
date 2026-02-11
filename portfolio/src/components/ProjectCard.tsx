@@ -51,7 +51,7 @@ export function ProjectCard({ title, description, tags, actions }: ProjectCardPr
           ))}
         </div>
 
-        {/* ações (abaixo do conteúdo, sem sobrepor) */}
+        {/* ações -estao abaixo para nao sobrepor) */}
         <div className="mt-4 flex flex-wrap gap-2 md:justify-end">
           {actions.map((a) => {
             const isPrimary = a.variant === "primary";
