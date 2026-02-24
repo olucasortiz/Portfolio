@@ -16,6 +16,11 @@ const techs: Tech[] = [
   { name: "Oracle DB", subtitle: "Enterprise", iconPath: "/tech/oracle.svg", accent: "cyan" },
   { name: "Mensageria", subtitle: "RabbitMQ, Kafka", iconPath: "/tech/messaging.svg", accent: "violet" },
   { name: "Cloud (AWS / Oracle)", subtitle: "Deploy e infraestrutura", iconPath: "/tech/cloud.svg", accent: "cyan" },
+  { name: "Java", subtitle: "Back-end e APIs", iconPath: "/tech/java.svg", accent: "violet" },
+  { name: "Spring Boot", subtitle: "REST + Security + JPA", iconPath: "/tech/spring.svg", accent: "cyan" },
+  { name: "C#", subtitle: "APIs e aplicações", iconPath: "/tech/csharp.svg", accent: "violet" },
+  { name: ".NET", subtitle: "Web API + EF Core", iconPath: "/tech/dotnet.svg", accent: "cyan" },
+
 ];
 
 function accentClasses(accent: Tech["accent"]) {
