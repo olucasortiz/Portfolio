@@ -9,18 +9,22 @@ type Tech = {
 };
 
 const techs: Tech[] = [
-  { name: "Node.js", subtitle: "APIs e serviços", iconPath: "/tech/node.svg", accent: "cyan" },
-  { name: "TypeScript", subtitle: "Tipagem e DX", iconPath: "/tech/typescript.svg", accent: "violet" },
-  { name: "Prisma ORM", subtitle: "Migrations + TX", iconPath: "/tech/prisma.svg", accent: "cyan" },
-  { name: "PostgreSQL", subtitle: "Relacional", iconPath: "/tech/postgresql.svg", accent: "violet" },
-  { name: "Oracle DB", subtitle: "Enterprise", iconPath: "/tech/oracle.svg", accent: "cyan" },
-  { name: "Mensageria", subtitle: "RabbitMQ, Kafka", iconPath: "/tech/messaging.svg", accent: "violet" },
-  { name: "Cloud (AWS / Oracle)", subtitle: "Deploy e infraestrutura", iconPath: "/tech/cloud.svg", accent: "cyan" },
-  { name: "Java", subtitle: "Back-end e APIs", iconPath: "/tech/java.svg", accent: "violet" },
-  { name: "Spring Boot", subtitle: "REST + Security + JPA", iconPath: "/tech/spring.svg", accent: "cyan" },
-  { name: "C#", subtitle: "APIs e aplicações", iconPath: "/tech/csharp.svg", accent: "violet" },
-  { name: ".NET", subtitle: "Web API + EF Core", iconPath: "/tech/dotnet.svg", accent: "cyan" },
+  { name: "TypeScript", subtitle: "APIs tipadas e escaláveis", iconPath: "/tech/typescript.svg", accent: "violet" },
+  { name: "Node.js", subtitle: "Backend e serviços REST", iconPath: "/tech/node.svg", accent: "cyan" },
+  { name: "Fastify", subtitle: "APIs performáticas", iconPath: "/tech/node.svg", accent: "cyan" },
 
+  { name: "Python", subtitle: "Processamento de dados", iconPath: "/tech/python.svg", accent: "violet" },
+  { name: "FastAPI", subtitle: "Microserviços inteligentes", iconPath: "/tech/fastapi.svg", accent: "cyan" },
+
+  { name: "PostgreSQL", subtitle: "Modelagem e persistência", iconPath: "/tech/postgresql.svg", accent: "violet" },
+  { name: "Supabase", subtitle: "Banco gerenciado", iconPath: "/tech/postgresql.svg", accent: "cyan" },
+
+  { name: "Docker", subtitle: "Containerização", iconPath: "/tech/docker.svg", accent: "cyan" },
+
+  { name: "REST APIs", subtitle: "Integração entre serviços", iconPath: "/tech/api.svg", accent: "cyan" },
+  { name: "Git", subtitle: "Versionamento", iconPath: "/tech/git.svg", accent: "violet" },
+
+  { name: "Cloud ", subtitle: "Deploy e infraestrutura", iconPath: "/tech/cloud.svg", accent: "cyan" },
 ];
 
 function accentClasses(accent: Tech["accent"]) {

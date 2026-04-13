@@ -63,12 +63,12 @@ export default function App() {
                   {lang === "pt" ? "Projeto em destaque" : "Featured project"}
                 </div>
 
-                <div className="mt-1 text-lg font-semibold">Resource Booking API</div>
+                <div className="mt-1 text-lg font-semibold">GeoDoc</div>
 
                 <p className="mt-2 text-sm text-slate-600 dark:text-slate-300">
                   {lang === "pt"
-                    ? "API REST para agendamento de recursos com validação de conflitos, transações e histórico."
-                    : "REST API for resource booking with conflict validation, transactions, and history."}
+                    ? "Plataforma para gestão de ativos geolocalizados com processamento automático de documentos e arquitetura em microserviços."
+                    : "Platform for managing geolocated assets with automated document processing and microservices architecture."}
                 </p>
 
                 <div className="mt-4 flex flex-wrap gap-2">
@@ -103,13 +103,50 @@ export default function App() {
 
         <div className="grid gap-4 md:grid-cols-2">
           <ProjectCard
+            title="GeoDoc"
+            description={
+              lang === "pt"
+                ? "Plataforma full-stack para gestão de ativos geolocalizados e documentos inteligentes, com arquitetura em microserviços e processamento automático de texto."
+                : "Full-stack platform for managing geolocated assets and intelligent documents, using microservices architecture and automated text processing."
+            }
+            tags={[
+              "React",
+              "TypeScript",
+              "Fastify",
+              "FastAPI",
+              "PostgreSQL",
+              "Supabase",
+              "Docker",
+              "Leaflet",
+            ]}
+            actions={[
+              {
+                label: "Visualizar",
+                href: "https://geodoc-frontend.onrender.com",
+                variant: "primary",
+              },
+              {
+                label: "Backend",
+                href: "https://github.com/olucasortiz/geodoc-backend",
+                variant: "glass",
+                icon: "github",
+              },
+              {
+                label: "Frontend",
+                href: "https://github.com/olucasortiz/geodoc-frontend",
+                variant: "glass",
+                icon: "github",
+              },
+            ]}
+          />
+          <ProjectCard
             title="Resource Booking API"
             description={
               lang === "pt"
                 ? "API de agendamento de recursos com validação de conflitos e consistência sob concorrência (transações). Frontend é apenas uma UI simples para consumir a API."
                 : "Resource booking API with conflict validation and strong data consistency under concurrency (transactions). Frontend is a simple UI to consume the API."
             }
-            tags={["Node.js", "TypeScript", "Fastify", "PostgreSQL", "Prisma", "Zod", "Docker"]}
+            tags={["Node.js", "TypeScript", "Fastify", "PostgreSQL", "Prisma", "Zod", "Docker", "SQL"]}
             actions={[
               { label: "Visualizar", href: "https://resource-booking-web.vercel.app/", variant: "primary" },
               { label: "Backend (principal)", href: "https://github.com/olucasortiz/resource-booking-api", variant: "glass", icon: "github" },
@@ -117,18 +154,7 @@ export default function App() {
             ]}
           />
 
-          <ProjectCard
-            title={lang === "pt" ? "Próximo projeto" : "Next project"}
-            description={
-              lang === "pt"
-                ? "Reservado para o projeto com deploy cloud (CI/CD, logs, observabilidade) e foco em produção."
-                : "Reserved for a cloud-deployed project (CI/CD, logs, observability) with production focus."
-            }
-            tags={["Cloud", "CI/CD", "Observability"]}
-            actions={[
-              { label: lang === "pt" ? "Em breve" : "Coming soon", href: "https://github.com/olucasortiz", variant: "glass" },
-            ]}
-          />
+          
         </div>
 
 
@@ -145,45 +171,42 @@ export default function App() {
           {lang === "pt" ? (
             <div className="mt-3 space-y-3 text-sm text-slate-600 dark:text-slate-300">
               <p>
-                Sou desenvolvedor com foco principal em backend, atuando na construção de
-                APIs e serviços com regras de negócio bem definidas, validação consistente
-                e preocupação real com integridade de dados.
+                Sou desenvolvedor com foco principal em backend, atuando na construção de APIs e serviços com regras de negócio bem definidas, validação consistente e forte preocupação com integridade de dados e organização da aplicação.
               </p>
 
               <p>
-                Minha stack principal é Node.js e TypeScript, utilizando PostgreSQL como
-                banco relacional. Tenho experiência prática com ORM, migrations, controle
-                de concorrência e modelagem voltada a cenários reais de produção.
+                Minha stack principal é Node.js e TypeScript, utilizando PostgreSQL como banco relacional. Tenho experiência prática com modelagem de dados, construção de APIs REST, controle de concorrência e organização em camadas, sempre voltado a cenários reais de produção.
               </p>
 
               <p>
-                Também possuo conhecimento em mensageria, entendendo conceitos como
-                processamento assíncrono, desacoplamento entre serviços, filas, eventos e
-                garantias de entrega. Busco sempre estruturar soluções escaláveis,
-                previsíveis e fáceis de manter, com código limpo e decisões técnicas bem
-                fundamentadas.
+                Também possuo experiência com integração entre serviços, incluindo comunicação entre aplicações e processamento assíncrono, aplicando conceitos de desacoplamento e arquitetura baseada em serviços.
               </p>
+              
+              
+              <p>No frontend, utilizo React para construção de interfaces que consomem APIs, incluindo aplicações com visualização de dados e integração com mapas interativos, permitindo uma visão completa do fluxo da aplicação.</p>
+
+              <p>Busco sempre desenvolver soluções escaláveis, bem estruturadas e de fácil manutenção, com código limpo, boas práticas e alinhamento com necessidades de produto e evolução contínua do sistema.</p>
             </div>
+
+
           ) : (
             <div className="mt-3 space-y-3 text-sm text-slate-600 dark:text-slate-300">
               <p>
-                Backend-focused developer with experience building APIs and services with
-                clear business rules, strong validation, and real concern for data
-                integrity.
+                I am a backend developer, primarily focused on building APIs and services with well-defined business rules, consistent validation, and a strong emphasis on data integrity and application organization.
               </p>
 
               <p>
-                My main stack is Node.js and TypeScript, using PostgreSQL as a relational
-                database. I have hands-on experience with ORMs, migrations, concurrency
-                control, and production-oriented data modeling.
+                My main stack is Node.js and TypeScript, using PostgreSQL as a relational database. I have practical experience with data modeling, building REST APIs, concurrency control, and layered organization, always geared towards real-world production scenarios.
               </p>
 
               <p>
-                I also have knowledge in messaging systems, understanding concepts such as
-                asynchronous processing, service decoupling, queues, events, and delivery
-                guarantees. I focus on building scalable, predictable, and maintainable
-                backend solutions with clean code and solid technical decisions.
+                I also have experience with service integration, including application communication and asynchronous processing, applying concepts of decoupling and service-based architecture.
+
               </p>
+
+              <p>On the frontend, I use React to build interfaces that consume APIs, including applications with data visualization and integration with interactive maps, allowing a complete view of the application flow.</p>
+
+              <p>I always strive to develop scalable, well-structured, and easily maintainable solutions, with clean code, best practices, and alignment with product needs and continuous system evolution.</p>
             </div>
           )}
         </GlassCard>
@@ -202,7 +225,7 @@ export default function App() {
           <div className="flex flex-wrap items-center gap-2">
             <a
               className="glass rounded-xl px-4 py-2 text-sm font-semibold hover:ring-1 hover:ring-cyan-400/40 transition"
-              href="lucassas@outlook.com"
+              href="mailto:lucassas@outlook.com"
             >
               Email
             </a>
