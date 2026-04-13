@@ -18,6 +18,7 @@ const techs: Tech[] = [
 
   { name: "PostgreSQL", subtitle: "Modelagem e persistência", iconPath: "/tech/postgresql.svg", accent: "violet" },
   { name: "Supabase", subtitle: "Banco gerenciado", iconPath: "/tech/postgresql.svg", accent: "cyan" },
+  { name: "MongoDB", subtitle: "NoSQL (uso para captar logs)", iconPath: "/tech/mongodb.svg", accent: "violet" },
 
   { name: "Docker", subtitle: "Containerização", iconPath: "/tech/docker.svg", accent: "cyan" },
 
